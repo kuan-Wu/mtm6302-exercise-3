@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Job Listing</title>
+  </head>
+  <body>
+    <div class="alert"></div>
+    <form id="save-later-form">
+      <h3>Job Posting</h3>
+      <label for="full-name">Full Name</label>
+      <input type="text" name="full-name" id="full-name" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" maxlength="11" />
+      <label for="security">Current Employment Status</label>
+      <select name="security" id="security" tabindex="0">
+        <option value="">select value</option>
+        <option value="fulltime">fulltime</option>
+        <option value="parttime">parttime</option>
+        <option value="unemployment">unemployment</option>
+      </select>
+      <label for="description">Description</label>
+      <textarea
+        name="description"
+        id="description"
+      ></textarea>
+      <button type="submit" id="submit">SUBMIT</button>
+      <button type="submit" id="save">SAVE</button>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
